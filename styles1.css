@@ -1,0 +1,202 @@
+/* body {
+    background: linear-gradient(135deg, #87CEFA, #F0E68C, #FFA07A, #20B2AA); 
+    background-size: 400% 400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    animation: gradientShift 15s ease infinite; 
+}
+
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+ /* Main Background with Weather-inspired Gradient */
+body {
+    background: linear-gradient(135deg, #87CEFA, #F0E68C, #FFA07A, #20B2AA); /* Weather-inspired gradient */
+    background-size: 400% 400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    animation: gradientShift 15s ease infinite; /* Smooth transition for weather feel */
+}
+
+/* Weather Animation Keyframes */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Weather Container Styling */
+#weather-container {
+    background: rgba(255, 255, 255, 0.15); /* More transparent for softer look */
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    backdrop-filter: blur(20px); /* Stronger blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#weather-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Heading and Text Styling */
+h2, label, p {
+    color: #FFFFFF;
+    margin: 8px 0;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+label {
+    font-size: 18px;
+}
+
+/* Input Fields */
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2); /* Light translucent input field */
+    color: white;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #fafbfc, #fcfafc); /* Gradient button */
+    color: rgb(17, 9, 9);
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 110px;
+    font-size: 16px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #b4cfe6, #dee3e6); /* Darker gradient on hover */
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Temperature Section */
+#temp-div p {
+    font-size: 64px;
+    margin-top: -20px;
+    color: #FFFFFF;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Weather Info Styling */
+#weather-info {
+    font-size: 22px;
+    color: #FFF;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Weather Icon Styling */
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 10px; 
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hourly Forecast Section */
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hourly Forecast Item */
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+.hourly-item:hover {
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
