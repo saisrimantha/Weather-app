@@ -1,27 +1,3 @@
-/* body {
-    background: linear-gradient(135deg, #87CEFA, #F0E68C, #FFA07A, #20B2AA); 
-    background-size: 400% 400%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    animation: gradientShift 15s ease infinite; 
-}
-
-
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
  /* Main Background with Weather-inspired Gradient */
 body {
     background: linear-gradient(135deg, #87CEFA, #F0E68C, #FFA07A, #20B2AA); /* Weather-inspired gradient */
@@ -96,7 +72,7 @@ input {
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0,0,0, 0.6);
 }
 
 input:focus {
