@@ -40,7 +40,7 @@ This project is a simple web application that allows users to enter a city name 
 
 ## Screenshot of UI
 
-![Example Screenshot](images/screenshot.png)
+![Example Screenshot](images/img1.png)
 
 
 ## Contributing
