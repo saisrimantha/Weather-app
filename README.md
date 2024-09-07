@@ -38,8 +38,9 @@ This project is a simple web application that allows users to enter a city name 
 2. Click the "Get Weather" button.
 3. The current weather and 24-hour forecast for the city will be displayed below.
 
-## Example
+## Screenshot of UI
 
+![Example Screenshot](images/screenshot.png)
 
 
 ## Contributing
